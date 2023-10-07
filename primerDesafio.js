@@ -41,12 +41,12 @@ class ProductManager {
 };
 
 const productManager = new ProductManager();
-console.log(productManager.getProducts());
+/* console.log(productManager.getProducts());
 console.log(productManager.addProduct('Producto prueba', 'Este es un producto prueba', 200,  'Sin imagen', 'abc123', 25));
 console.log(productManager.getProducts());
 console.log(productManager.addProduct('Producto prueba', 'Este es un producto prueba', 200,  'Sin imagen', 'abc123', 25));
 console.log(productManager.getProducts());
 console.log(productManager.getProductById(1));
-console.log(productManager.getProductById(20)); 
+console.log(productManager.getProductById(20));  */
 
 
