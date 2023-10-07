@@ -20,7 +20,7 @@ class ProductManager {
             this.products.push(product);
             return product;
         } else {
-            console.log(`El producto con código ${product.code} ya fue ingresado`);
+            return `El producto con código ${product.code} ya fue ingresado`;
         }
     };
 
@@ -31,22 +31,22 @@ class ProductManager {
     getProductById(id) {
         const productByIdValidation = this.products.find(data => data.id === id);
         if (!productByIdValidation) {
-            return console.log('Product Not Found');
+            return 'Product Not Found';
         }
             else {
-                return console.log(productByIdValidation);
+                return productByIdValidation;
             };
     };
 
 };
 
 const productManager = new ProductManager();
-/* console.log(productManager.getProducts());
-productManager.addProduct('Producto prueba', 'Este es un producto prueba', 200,  'Sin imagen', 'abc123', 25);
 console.log(productManager.getProducts());
-productManager.addProduct('Producto prueba', 'Este es un producto prueba', 200,  'Sin imagen', 'abc123', 25);
+console.log(productManager.addProduct('Producto prueba', 'Este es un producto prueba', 200,  'Sin imagen', 'abc123', 25));
 console.log(productManager.getProducts());
-productManager.getProductById(1);
-productManager.getProductById(20); */
+console.log(productManager.addProduct('Producto prueba', 'Este es un producto prueba', 200,  'Sin imagen', 'abc123', 25));
+console.log(productManager.getProducts());
+console.log(productManager.getProductById(1));
+console.log(productManager.getProductById(20)); 
 
 
